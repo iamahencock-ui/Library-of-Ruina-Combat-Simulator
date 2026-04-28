@@ -4,7 +4,7 @@ combat_pages={'Light Attack':Combat_Page('Light Attack',2,[{'type':'slash','roll
               'Light Defense':Combat_Page('Light Defense',3,[{'type':'evade','rolls':[1,5]},{'type':'block','rolls':[2,3]},{'type':'slash','rolls':[1,2]}])}
 def clash(player,enemy):
     """
-    Clashes two combat pages and returns the rsult of each clash
+    Clashes two combat pages and returns the result of each clash
     WIP
 
     Args:
@@ -12,7 +12,7 @@ def clash(player,enemy):
         Enemy (combat_Page): The combat page the npc enemy uses
 
     Returns:
-        list: The results of each individual clash inthe following format [{result:'player'/'enemy'/'tie',damage:int,status_infliction:{status name:int}}]
+        list: The results of each individual clash in the following format [{result:'player'/'enemy'/'tie',damage:int,status_infliction:{status name:int}}]
     """
     clashes=max(player.numdice,enemy.numdice)
     result=[]
