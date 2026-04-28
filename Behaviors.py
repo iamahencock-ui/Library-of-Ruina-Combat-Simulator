@@ -21,15 +21,20 @@ class NPC:
     Args:
         hp (int): the max hp of the npc
         sp (int): the max sp of the npc
-        pages (dict): the combat bookshelf of the NPC
+        pages (dict): the combat bookshelf of the NPCx
     '''
     def __init__(self,hp,sp,pages):
         self.mhp=hp
         self.msp=sp
         self.hp=hp
         self.sp=sp
+        self.bookshelf=pages
         self.pages=pages
     def action(self):
+        '''
+        Takes a random combat page from current bookshelf and subtracts the count of that page by when. Afterwards, if the bookshelf is empty, it resets the bookshelf
+        WIP
+        '''
         temp=[]
         for i in self.pages.keys():
             for j in range(self.pages[i]):
