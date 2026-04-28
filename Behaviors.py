@@ -5,7 +5,7 @@ class Player:
         self.msp=17
         self.hp=35
         self.sp=17
-        self.pages={'Light Attack':5,'Light Defense':4}
+        self.pages={}
     def action(self):
         temp=[]
         for i in self.pages.keys():
