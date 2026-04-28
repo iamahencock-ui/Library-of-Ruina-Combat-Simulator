@@ -42,4 +42,4 @@ class NPC:
         result=random.choice(temp)
         self.pages[result]-=1
         return result
-rat=NPC()
+rat=NPC(20,7,{'Light Attack':5,'Light Defense':4})
