@@ -18,10 +18,10 @@ class NPC:
     '''
     Base NPC template class
     WIP
-
-    hp (int): the max hp of the npc
-    sp (int): the max sp of the npc
-    pages (dict): the combat bookshelf of the NPC
+    Args:
+        hp (int): the max hp of the npc
+        sp (int): the max sp of the npc
+        pages (dict): the combat bookshelf of the NPC
     '''
     def __init__(self,hp,sp,pages):
         self.mhp=hp
@@ -37,3 +37,4 @@ class NPC:
         result=random.choice(temp)
         self.pages[result]-=1
         return result
+rat=NPC()
