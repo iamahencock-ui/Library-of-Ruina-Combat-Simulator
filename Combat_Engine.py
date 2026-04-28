@@ -4,7 +4,8 @@ combat_pages={'Light Attack':Combat_Page('Light Attack',2,[{'type':'slash','roll
               'Light Defense':Combat_Page('Light Defense',3,[{'type':'evade','rolls':[1,5]},{'type':'block','rolls':[2,3]},{'type':'slash','rolls':[1,2]}])}
 def clash(player,enemy):
     """
-    Calculate the area of a circle.
+    Clashes two combat pages and returns the rsult of each clash
+    WIP
 
     Args:
         player (combat_Page): The combat page the player uses

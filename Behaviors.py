@@ -14,13 +14,21 @@ class Player:
         result=random.choice(temp)
         self.pages[result]-=1
         return result
-class Backstreets_Rat:
-    def __init__(self):
-        self.mhp=20
-        self.msp=7
-        self.hp=20
-        self.sp=7
-        self.pages={'Light Attack':5,'Light Defense':4}
+class NPC:
+    '''
+    Base NPC template class
+    WIP
+
+    hp (int): the max hp of the npc
+    sp (int): the max sp of the npc
+    pages (dict): the combat bookshelf of the NPC
+    '''
+    def __init__(self,hp,sp,pages):
+        self.mhp=hp
+        self.msp=sp
+        self.hp=hp
+        self.sp=sp
+        self.pages=pages
     def action(self):
         temp=[]
         for i in self.pages.keys():
