@@ -22,9 +22,6 @@ class NPC:
         hp (int): the max hp of the npc
         sp (int): the max sp of the npc
         pages (dict): the combat bookshelf of the NPC
-        
-    Functions:
-        action (list): returns the name of a combat pages and subtracts 
     '''
     def __init__(self,hp,sp,pages):
         self.mhp=hp
